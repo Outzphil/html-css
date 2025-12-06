@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Marcellus&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Caveat", cursive;
+    --fonte3: "Marcellus", serif;
+}
+
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    background-image: url(Imagens/8c8fc3d62e5519811ac527d7538b9c66.jpg);
+    background-size: cover;
+    background-position: top right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    text-shadow: 13px 2px 13px  rgba(240, 233, 233, 0.466);
+    font-variant: small-caps;
+
+    background-color: rgb(83, 69, 69);}
+
+header{
+    text-align: center;
+    color: white;
+    background-color: black;}
+
+header > h1{
+    letter-spacing: 3px;
+    padding-top: 25px;
+    font-family: var(--fonte3);
+}
+header > p{padding-bottom: 25px;}
+
+a{
+    text-decoration: none;
+    color: rgb(180, 236, 169);
+    font-size: 16px;
+}
+
+A:hover{color: darkcyan;}
+
+nav {
+  background-color: var(--cor5);
+  padding: 10px;
+  box-shadow: 0px 7px 7px rgba(34, 22, 22, 0.35);
+}
+
+.navegação{
+    font-weight: bold;
+    padding: 1px;
+    color: rgb(87, 107, 196);
+    border-radius: 50px;
+    border: solid;
+    background-color: rgb(11, 25, 46);
+}
+
+.navegação:hover{
+    padding: 5px;
+    border-radius: 50px;
+    border: solid;
+    background-color: rgb(11, 25, 46);
+}
+
+
+.video {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 400px;
+  height: 0;
+  overflow: hidden;
+  max-height: 400px; /* ou outro valor que ache razoável */
+}
+
+.video > iframe {
+ 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+footer{
+    margin-top: auto;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
